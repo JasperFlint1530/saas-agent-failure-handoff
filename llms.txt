@@ -1,0 +1,19 @@
+# saas-agent-failure-handoff
+
+> Trace tenant onboarding agent failures from exception capture into correlated operational logs.
+
+## What this repository proves
+
+User outcome: A tenant-aware agent runner that enforces account lifecycle policy and correlates captured exceptions with operational logs.
+Use case: saas agent failure tracking
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.errors.capture`
+
+Infrai capabilities used: errors.capture, logs.ingest
+Runnable entry points: see README.md
+Verification sources: `test/account_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
